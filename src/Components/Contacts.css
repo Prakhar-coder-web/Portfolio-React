@@ -1,0 +1,102 @@
+.contact {
+    background: #000834;
+    /* height: 102vh; */
+    margin-top: -50px;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 60px;
+    background: linear-gradient(to bottom, rgb(7, 60, 234), rgba(255, 255, 255, 0.656));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contact p {
+    text-align: center;
+    color: aqua;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 28px;
+}
+
+.contact form {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-row {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    /* width: 00px; */
+}
+
+.contact-row input {
+    position: relative;
+    padding: 16px 32px;
+    background: #030f53;
+    border: none;
+    outline: none;
+    color: wheat;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-bottom: 4px solid aqua;
+    backdrop-filter: blur(20px);
+    /* border-radius: 15px; */
+}
+
+
+textarea {
+    position: relative;
+    padding: 16px 32px;
+    background: #030f53;
+    border: none;
+    outline: none;
+    color: wheat;
+    font-family: sans-serif;
+    font-size: 18px;
+    resize: none;
+    border-bottom: 4px solid aqua;
+    /* border-radius: 15px; */
+}
+
+.contact-row-2 {
+    position: relative;
+    margin: 20px 0;
+}
+
+.contact-row input::placeholder {
+    color: white;
+}
+
+.contact-row input[type=text] {
+    margin-right: 15px;
+}
+
+.contact-row input[type=tel] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.contact-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    color: white;
+    background: #030f53;
+    padding: 5px 0;
+}
