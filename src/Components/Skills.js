@@ -3,61 +3,63 @@ import "./Skills.css";
 import VanillaTilt from 'vanilla-tilt';
 
 function Skills() {
-  const skills2 = [
+  const skills1 = [
     {
       id: 1,
       skill: "html",
-      per: "95%",
       src: "./html.png"
     },
     {
       id: 2,
       skill: "css",
-      per: "92%",
       src: "./css.png"
     },
     {
       id: 3,
       skill: "Js",
-      per: "91%",
       src: "./js.png"
-    },
+    }
+  ]
+  const skills2 = [
     {
       id: 4,
-      skill: "react.js",
-      per: "93%",
-      src: "./atom.png"
+      skill: "angular",
+      src: "./angular.jpg"
     },
     {
       id: 5,
-      skill: "Vue.js",
-      per: "87%",
-      src: "./brands.png"
+      skill: "react",
+      src: "./atom.png"
     },
     {
       id: 6,
       skill: "sass",
-      per: "99%",
       src: "./sass.png"
     }
   ]
-  const items = skills2.map((obj) =>
-    <div id={obj.id} class="skillsbar">
-      <span className='imglogo'><img src={require(`${obj.src}`)} /></span> <span class="name">{obj.skill}</span>
-      <div class="percent">
-        <div class="progress" style={{ width: `${obj.per}` }}></div>
-      </div>
-      <span class="value">{obj.per}</span>
+  const items1 = skills1.map((obj) => 
+    <div id={obj.id} className="skills-main-bottom-row-box" onMouseOver={glare}>
+            <img src={require(`${obj.src}`)} alt={obj.skill} />
+            <div className="skills-main-bottom-row-box-des">{obj.skill}</div>
     </div>
+  
   );
-  function glare(){
+  const items2= skills2.map((obj) => 
+    <div id={obj.id} className="skills-main-bottom-row-box" onMouseOver={glare}>
+            <img src={require(`${obj.src}`)} alt={obj.skill} />
+            <div className="skills-main-bottom-row-box-des">{obj.skill}</div>
+    </div>
+  
+
+  )
+  function glare() {
     VanillaTilt.init(document.querySelectorAll(".skills-main-bottom-row-box"), {
       max: 40,
       speed: 800,
       glare: true,
       "max-glare": 1,
       transition: true,
-      easing: "cubic-bezier(.03,.98,.52,.99)",   
+      easing: "cubic-bezier(.03,.98,.52,.99)",
     });
   }
   return (
@@ -68,32 +70,10 @@ function Skills() {
       </div>
       <div className="skills-main-bottom">
         <div className="skills-main-bottom-row">
-          <div className="skills-main-bottom-row-box" onMouseOver={glare}>
-            <img src={require('./html.png')} alt="" />
-            <div className="skills-main-bottom-row-box-des">Html</div>
-          </div>
-          <div className="skills-main-bottom-row-box" onMouseOver={glare}>
-            <img src={require('./css.png')} alt="" />
-            <div className="skills-main-bottom-row-box-des">CSS</div>
-          </div>
-          <div className="skills-main-bottom-row-box" onMouseOver={glare}>
-            <img src={require('./js.png')} alt="" />
-            <div className="skills-main-bottom-row-box-des">Js</div>
-          </div>
+          {items1}
         </div>
         <div className="skills-main-bottom-row">
-          <div className="skills-main-bottom-row-box" onMouseOver={glare}>
-            <img src={require('./angular.jpg')} alt="" />
-            <div className="skills-main-bottom-row-box-des">Angular</div>
-          </div>
-          <div className="skills-main-bottom-row-box" onMouseOver={glare}>
-            <img src={require('./atom.png')} alt="" />
-            <div className="skills-main-bottom-row-box-des">React</div>
-          </div>
-          <div className="skills-main-bottom-row-box" onMouseOver={glare}>
-            <img src={require('./sass.png')} alt="" />
-            <div className="skills-main-bottom-row-box-des">Sass</div>
-          </div>
+          {items2}
         </div>
       </div>
     </div>

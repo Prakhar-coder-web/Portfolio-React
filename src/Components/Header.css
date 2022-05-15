@@ -9,6 +9,11 @@
     background: #000834;
     color: white;
     z-index: 100000;
+    max-width: 2000px;
+}
+.header img
+{
+  display: none;
 }
 .header-row
 {
@@ -45,3 +50,44 @@
     transform-origin: left;
     transform: scaleX(1);
   }
+@media(max-width: 500px)
+{
+  .header{
+    height: auto;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 40px;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.4);
+  }
+  .header img
+  {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    filter: invert(1);
+    cursor: pointer;
+  }
+  .header-row
+  {
+    flex-direction: column;
+    width: 120px;
+    height: auto;
+    align-items: flex-start;
+    margin-left: 20px;
+  }
+  .l1
+  {
+    position: relative;
+    margin: 10px 0;
+  }
+}
+.open
+{
+  display: flex;
+}
+.close
+{
+  display: none;
+}

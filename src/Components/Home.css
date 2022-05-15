@@ -189,3 +189,41 @@ button:hover
         opacity: 0.41;
     }
 }
+@media only screen and (max-width: 490px) {
+    #id1
+    {
+        display: none;
+    }
+    .home-main
+    {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home-main h2
+    {
+        width: 100%;
+    }
+    .home-main p
+    {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    button
+    {
+        margin-left: 5px;
+    }
+}
+@media only screen and (max-width: 328px)
+{
+    #id2
+    {
+        display: none;
+    }
+    .home
+    {
+        height: 80vh;
+        min-height: 600px;
+    }
+} 

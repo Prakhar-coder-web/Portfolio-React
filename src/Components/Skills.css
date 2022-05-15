@@ -70,6 +70,7 @@
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(6px);
+    margin: 0 10px;
 }
 
 .skills-main-bottom-row-box img {
@@ -108,3 +109,22 @@
 {
     background: linear-gradient(45deg, #1fe6ff, #673AB7);
 } */
+@media(max-width: 650px)
+{
+    .skills-main-top{
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .skills-main-bottom-row
+    {
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 0;
+    }  
+    .skills-main-bottom-row-box
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

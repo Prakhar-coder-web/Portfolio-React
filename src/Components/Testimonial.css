@@ -116,4 +116,11 @@
       border-radius: 50%;
     }
   }
-  
+@media(max-width: 336px)
+{
+  .testimonial h2
+  {
+    width: 100%;
+    font-size: 16vw;
+  }
+}

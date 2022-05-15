@@ -112,3 +112,18 @@
         left: 0;
     }
 }
+@media(max-width: 390px)
+{
+    .experience h1
+    {
+        width: 100%;
+        font-size: 14vw;
+    }
+} 
+    /* @media(max-width: 260px)
+    {
+        .experience h1 
+        {
+            font-size: 30px;
+        }
+    } */

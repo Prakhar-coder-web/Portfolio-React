@@ -1,9 +1,7 @@
 .project
 {
     position: relative;
-    /* min-height: 210vh; */
 	height: auto;
-	/* min-height: 200vh; */
     background: #000834;
     margin-top: -50px;
     padding-top: 20px;
@@ -17,17 +15,15 @@
     -webkit-background-clip: text;
     color: transparent;
 }
-nav{
-	width: 100%;
-	/* height: auto; */
-	float: left;
-}
 .top
 {
 	width: 100%;
-	/* height: auto; */
 	float: left;
 
+}
+nav{
+	width: 100%;
+	float: left;
 }
 
 h1 {
@@ -54,7 +50,6 @@ nav ul {
 nav ul li {
 	margin: 0;
 	padding: 0;
-	float: left;
 	list-style-type: none;
 }
 
@@ -64,7 +59,7 @@ nav ul li a {
 	float: left;
 	color: #fff;
 	text-decoration: none;
-	background-color: #000;
+	background-color: black;
 	margin-right: 10px;
 	border-radius: 5px;
 	-webkit-transition: all .05s ease-in;
@@ -100,7 +95,6 @@ nav ul li a:active {
 	background-color: #14B190;
 } */
 section {
-	/* float: left; */
 	width: 100%;
 	padding-top: 10px;
 }
@@ -110,12 +104,10 @@ section h3 {
 	font-size: 25px;
 	margin: 0;
 	padding: 0;
-	margin-left: 12.5%;
 	text-align: center;
 	padding-left: .5%;
 	border-bottom: 1px #555 dashed;
 	padding-bottom: 5px;
-	margin-right: 12.5%;
     color: white;
 }
 
@@ -124,18 +116,9 @@ section h3 {
 	position: relative;
 	/* width: 100%; */
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.items-row
-{
-	position: relative;
-	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	width: 100%;
-	margin: 15px 0;
+	flex-wrap: wrap;
 }
 .items-box
 {
@@ -146,8 +129,9 @@ section h3 {
 	align-items: center;
 	background: #100a5b;
 	box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.4);
+	margin: 20px 40px;
 }
-.items-box img
+.projectimage
 {
 	width: 300px;
 	height: auto;
@@ -164,12 +148,18 @@ section h3 {
 	line-height: 27px;
 	width: 100%;
 	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 .items-box-bottom
 {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+}
+.items-box-bottom-left
+{
+	margin-left: 10px;
 }
 .items-box-bottom-left img 
 {
@@ -204,4 +194,59 @@ section h3 {
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	opacity: 0;
+}
+.act
+{
+	background: aqua;
+	color: black;
+}
+.other
+{
+	background: #111;
+}
+@media(max-width: 318px)
+{
+	.items
+	{
+		width: 100%;
+	}
+	.items-box
+	{
+		width: 100%;
+		height: auto;
+		/* min-height: 350px; */
+	}
+	.projectimage
+	{
+		width: 100%;
+		height: auto;
+		min-height: 120px;
+	}
+	.items-box
+	{
+		margin: 10px;
+	}
+	.items-box-title
+	{
+		font-size: 9vw;
+	}
+	.items-box p
+	{
+		font-size: 6vw;
+	}
+	.items-box-bottom
+	{
+		margin-bottom: 20px;
+	}
+}
+@media(max-width: 708px)
+{
+	nav ul
+	{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		display: flex;
+		justify-content: space-evenly;
+	}
 }

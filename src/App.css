@@ -1,5 +1,10 @@
 body
 {
-    margin: 0;
+    margin: auto;
     padding: 0;
+    max-width: 2000px;
+}
+.aqua
+{
+    color: aqua;
 }

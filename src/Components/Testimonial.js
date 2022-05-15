@@ -19,10 +19,9 @@ export default function Testimonial() {
                     <img src={require('./person1.png')} />
                     <div className="myCarousel">
                         <h3>Shirley Fultz</h3>
-                        <h4>Designer</h4>
+                        <h4 className='aqua'>Designer</h4>
                         <p>
-                            It's freeing to be able to catch up on customized news and not be
-                            distracted by a social media element on the same site
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad ea molestiae.
                         </p>
                     </div>
                 </div>
@@ -31,23 +30,20 @@ export default function Testimonial() {
                     <img src={require('./person2.png')} />
                     <div className="myCarousel">
                         <h3>Daniel Keystone</h3>
-                        <h4>Designer</h4>
+                        <h4 className='aqua'>Designer</h4>
                         <p>
-                            The simple and intuitive design makes it easy for me use. I highly
-                            recommend Fetch to my peers.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore illum labore?
                         </p>
                     </div>
                 </div>
 
                 <div>
                     <img src={require('./person3.png')} />
-                    {/* <img src="/images/theo.png" /> */}
                     <div className="myCarousel">
                         <h3>Theo Sorel</h3>
-                        <h4>Designer</h4>
+                        <h4 className='aqua'>Designer</h4>
                         <p>
-                            I enjoy catching up with Fetch on my laptop, or on my phone when
-                            I'm on the go!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolore illum labore?
                         </p>
                     </div>
                 </div>
