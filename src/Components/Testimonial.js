@@ -16,7 +16,7 @@ export default function Testimonial() {
                 interval={6100}
             >
                 <div>
-                    <img src={require('./person1.png')} />
+                    <img src={require('./person1.png')} alt="img1"/>
                     <div className="myCarousel">
                         <h3>Shirley Fultz</h3>
                         <h4 className='aqua'>Designer</h4>
@@ -27,7 +27,7 @@ export default function Testimonial() {
                 </div>
 
                 <div>
-                    <img src={require('./person2.png')} />
+                    <img src={require('./person2.png')} alt="img2" />
                     <div className="myCarousel">
                         <h3>Daniel Keystone</h3>
                         <h4 className='aqua'>Designer</h4>
@@ -38,7 +38,7 @@ export default function Testimonial() {
                 </div>
 
                 <div>
-                    <img src={require('./person3.png')} />
+                    <img src={require('./person3.png')} alt="img3" />
                     <div className="myCarousel">
                         <h3>Theo Sorel</h3>
                         <h4 className='aqua'>Designer</h4>

@@ -38,14 +38,14 @@ function Skills() {
     }
   ]
   const items1 = skills1.map((obj) => 
-    <div id={obj.id} className="skills-main-bottom-row-box" onMouseOver={glare}>
+    <div key={obj.id} className="skills-main-bottom-row-box" onMouseOver={glare}>
             <img src={require(`${obj.src}`)} alt={obj.skill} />
             <div className="skills-main-bottom-row-box-des">{obj.skill}</div>
     </div>
   
   );
   const items2= skills2.map((obj) => 
-    <div id={obj.id} className="skills-main-bottom-row-box" onMouseOver={glare}>
+    <div key={obj.id} className="skills-main-bottom-row-box" onMouseOver={glare}>
             <img src={require(`${obj.src}`)} alt={obj.skill} />
             <div className="skills-main-bottom-row-box-des">{obj.skill}</div>
     </div>

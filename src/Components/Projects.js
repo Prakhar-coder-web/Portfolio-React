@@ -48,7 +48,7 @@ export default function Projects() {
     }
   ];
   const pr = projects.map((obj) =>
-    <div id={obj.id} className="items-box" data-cat={obj.category}>
+    <div key={obj.id} className="items-box" data-cat={obj.category}>
       <img src={require(`${obj.img}`)} alt="srcimage" className="projectimage" />
       <div className='items-box-title'>Project-{obj.id}</div>
       <p>{obj.description}</p>
@@ -164,8 +164,8 @@ export default function Projects() {
         </nav>
       </div>
       <section>
-        <h3>Showing <span class="cat-text">all</span> Projects</h3>
-        <div class="items">
+        <h3>Showing <span className="cat-text">all</span> Projects</h3>
+        <div className="items">
 
           {pr}
 
